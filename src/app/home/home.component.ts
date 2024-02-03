@@ -5,7 +5,7 @@ import { HousingLocation } from '../housinglocation';
   selector: 'app-home',
   template: `
   <section>
-    <form>
+    <form class="mt-3">
       <input type="text" placeholder="Filter by city">
       <button class="primary" type="button">Search</button>
     </form>
