@@ -6,14 +6,14 @@ import { HousingLocationComponent } from './housing-location/housing-location.co
   selector: 'app-root',
   template: `
     <main>
-
+      <a [routerLink]="['/']">
         <header class="brand-name">
-          <img class="brand-logo" src="/assets/logo.png" alt="logo" aria-hidden="true">
+          <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true">
         </header>
-        <section class="content">
-          <app-home></app-home>
-        </section>
-
+      </a>
+      <section class="content">
+        <router-outlet></router-outlet>
+      </section>
     </main>
   `,
   styleUrl: './app.component.css'
