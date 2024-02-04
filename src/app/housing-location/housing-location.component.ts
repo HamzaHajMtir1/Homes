@@ -5,9 +5,9 @@ import { HousingLocation } from '../housinglocation';
 @Component({
   selector: 'app-housing-location',
   template: `
-    <section class="listing mr-5">
+    <section class="listing">
       <img class="listing-photo" [src]="housingLocation.photo" alt="Exterior photo of {{housingLocation.name}}">
-      <h2 class="listing-heading">{{ housingLocation.name }}</h2>
+      <h3 class="listing-heading">{{ housingLocation.name }}</h3>
       <p class="listing-location">{{ housingLocation.city}}, {{housingLocation.state }}</p>
     </section>
     `,
